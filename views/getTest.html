@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+    <h2> get test from HTML</h2>
+    <form action = "http://localhost:8080/getForm" method = "get">
+      <input type = "text" name = "getWonky" />
+      <input type = 'submit' value = "Submit" />
+    </form>
+      <form action="http://localhost:8080/postForm" method="post">
+        <!-- this input name will show in the route's req.body.NAME (ex: req.body.dogNameIn) -->
+        <input type="text" name="dogNameIn" />
+        <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
